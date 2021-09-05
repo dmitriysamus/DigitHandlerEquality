@@ -1,17 +1,29 @@
 import java.util.Objects;
 
+/**
+ * Класс - обертка над числом value.
+ */
 public class DigitHandler {
     private int value;
 
+    /**
+     * Конструктор объекта типа DigitHandler.
+     */
     public DigitHandler(int value) {
         this.value = value;
     }
 
+    /**
+     * Производит расчет hashCode объекта по полю value.
+     */
     @Override
     public int hashCode() {
         return Objects.hash(value);
     }
 
+    /**
+     * Проверяет идентичность объектов по полю value.
+     */
     @Override
     public boolean equals(Object obj) {
         if (obj == null) {
